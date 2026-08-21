@@ -29,11 +29,14 @@ const tabs = [
 ];
 
 export default function Tabs() {
-  const [tab, setTab] = useState(1);
+  const [tab, setTab] =
+    useState(1);
 
-  const activeTab = tabs.find(
-    (item) => item.id === tab
-  );
+  const activeTab =
+    tabs.find(
+      (item) =>
+        item.id === tab
+    );
 
   return (
     <div className="ui-card">
