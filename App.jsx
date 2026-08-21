@@ -14,17 +14,30 @@ import Alert from "./components/ui/Alert";
 export default function App() {
   return (
     <div className="page">
+
+      {/* =========================================
+          NAVEGACIÓN SUPERIOR
+      ========================================= */}
       <TopNav />
 
+
+      {/* =========================================
+          HERO / INICIO
+      ========================================= */}
       <HeroSection />
 
+
       <main>
-        {/* INTRODUCCIÓN */}
+
+        {/* =========================================
+            INTRODUCCIÓN
+        ========================================= */}
         <section
           className="section"
           id="introduccion"
         >
           <div className="section-inner">
+
             <p className="section-kicker">
               Acerca del proyecto
             </p>
@@ -38,7 +51,9 @@ export default function App() {
               Introducción
             </h2>
 
+
             <div className="ui-card intro-card">
+
               <p>
                 Este blog documenta la{" "}
                 <strong>
@@ -49,14 +64,17 @@ export default function App() {
                 código de componentes reutilizables.
               </p>
 
+
               <h3 className="content-subtitle">
                 Guía rápida
               </h3>
 
+
               <ul className="feature-list">
+
                 <li>
-                  Variables CSS para colores, radios,
-                  sombras y espaciados.
+                  Variables CSS para colores,
+                  radios, sombras y espaciados.
                 </li>
 
                 <li>
@@ -77,40 +95,57 @@ export default function App() {
                   <code>/styles</code> y{" "}
                   <code>/assets</code>.
                 </li>
+
               </ul>
+
             </div>
+
           </div>
         </section>
 
-        {/* GUÍA DE ESTILOS */}
+
+        {/* =========================================
+            GUÍA DE ESTILOS
+        ========================================= */}
         <section
           className="section section--alt"
           id="estilos"
         >
           <div className="section-inner">
+
             <p className="section-kicker">
               Sistema visual
             </p>
 
+
             <h2 className="section-title">
+
               <i
                 className="bi bi-palette-fill"
                 aria-hidden="true"
               ></i>
 
               Guía de estilos
+
             </h2>
 
+
             <div className="showcase-grid">
+
+              {/* PALETA */}
               <div className="ui-card">
+
                 <h3 className="component-title">
+
                   <i
                     className="bi bi-droplet-half"
                     aria-hidden="true"
                   ></i>
 
                   Paleta & Variables
+
                 </h3>
+
 
                 <p className="muted-text">
                   La identidad usa una paleta oscura
@@ -119,22 +154,30 @@ export default function App() {
                   coherencia visual.
                 </p>
 
+
                 <pre className="code-block">
 {`--primary: #00eaff;
 --primary-soft: rgba(0, 234, 255, 0.18);
 --radius: 18px;`}
                 </pre>
+
               </div>
 
+
+              {/* TIPOGRAFÍA */}
               <div className="ui-card">
+
                 <h3 className="component-title">
+
                   <i
                     className="bi bi-type"
                     aria-hidden="true"
                   ></i>
 
                   Tipografía
+
                 </h3>
+
 
                 <p className="muted-text">
                   La jerarquía tipográfica combina
@@ -143,31 +186,43 @@ export default function App() {
                   mediante{" "}
                   <code>clamp()</code>.
                 </p>
+
               </div>
+
             </div>
+
           </div>
         </section>
 
-        {/* COMPONENTES */}
+
+        {/* =========================================
+            COMPONENTES
+        ========================================= */}
         <section
           className="section"
           id="componentes"
         >
           <div className="section-inner">
+
             <p className="section-kicker">
               Biblioteca visual
             </p>
 
+
             <h2 className="section-title">
+
               <i
                 className="bi bi-grid-fill"
                 aria-hidden="true"
               ></i>
 
               Componentes
+
             </h2>
 
+
             <div className="showcase-grid">
+
               <Card />
 
               <Badge />
@@ -179,90 +234,125 @@ export default function App() {
               <Alert />
 
               <Tooltip />
+
             </div>
+
           </div>
         </section>
 
-        {/* FORMULARIOS */}
+
+        {/* =========================================
+            FORMULARIOS
+        ========================================= */}
         <section
           className="section section--alt"
           id="formularios"
         >
           <div className="section-inner">
+
             <p className="section-kicker">
               Entrada de datos
             </p>
 
+
             <h2 className="section-title">
+
               <i
                 className="bi bi-pen-fill"
                 aria-hidden="true"
               ></i>
 
               Formularios
+
             </h2>
 
+
             <div className="showcase-grid">
+
               <Input />
+
             </div>
+
           </div>
         </section>
 
-        {/* NAVEGACIÓN */}
+
+        {/* =========================================
+            NAVEGACIÓN / INTERACCIÓN
+        ========================================= */}
         <section
           className="section"
           id="navegacion"
         >
           <div className="section-inner">
+
             <p className="section-kicker">
               Interacción
             </p>
 
+
             <h2 className="section-title">
+
               <i
                 className="bi bi-menu-button-wide-fill"
                 aria-hidden="true"
               ></i>
 
               Navegación
+
             </h2>
 
+
             <div className="showcase-grid">
+
               <Tabs />
 
               <Accordion />
+
             </div>
+
           </div>
         </section>
 
-        {/* EJEMPLOS */}
+
+        {/* =========================================
+            EJEMPLOS
+        ========================================= */}
         <section
           className="section section--alt"
           id="ejemplos"
         >
           <div className="section-inner">
+
             <p className="section-kicker">
               Implementación
             </p>
 
+
             <h2 className="section-title">
+
               <i
                 className="bi bi-code-square"
                 aria-hidden="true"
               ></i>
 
               Ejemplos de uso
+
             </h2>
 
+
             <div className="ui-card example-card">
+
               <h3 className="content-subtitle">
                 Botón destacado
               </h3>
 
+
               <p className="muted-text">
-                Código de ejemplo para utilizar el
-                botón principal:
+                Código de ejemplo para utilizar
+                el botón principal:
               </p>
+
 
               <pre className="code-block">
 {`<button className="ui-btn primary">
@@ -270,23 +360,33 @@ export default function App() {
 </button>`}
               </pre>
 
+
               <h3 className="content-subtitle">
                 Modal
               </h3>
+
 
               <pre className="code-block">
 {`import Modal from "./components/ui/Modal";
 
 <Modal />`}
               </pre>
+
             </div>
+
           </div>
         </section>
+
       </main>
 
-      {/* FOOTER */}
+
+      {/* =========================================
+          FOOTER
+      ========================================= */}
       <footer className="footer">
+
         <div className="footer-inner">
+
           <p>
             Blog Alejandra • Biblioteca UI Profesional
             • Diseñado por{" "}
@@ -296,24 +396,31 @@ export default function App() {
             • 2025
           </p>
 
+
           <p className="footer-note">
-            Proyecto académico desarrollado con React,
-            Vite y CSS avanzado.
+            Proyecto académico desarrollado con
+            React, Vite y CSS avanzado.
           </p>
+
 
           <a
             href="#inicio"
             className="back-to-top"
           >
+
             <i
               className="bi bi-arrow-up"
               aria-hidden="true"
             ></i>
 
             Volver al inicio
+
           </a>
+
         </div>
+
       </footer>
+
     </div>
   );
 }
