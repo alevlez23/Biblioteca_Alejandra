@@ -5,19 +5,27 @@ export default function HeroSection() {
       id="inicio"
     >
       <div className="hero-inner">
+
+        {/* ETIQUETA SUPERIOR */}
         <span className="hero-eyebrow">
           React + Vite + CSS avanzado
         </span>
 
+
+        {/* TÍTULO */}
         <h1 className="hero-title">
           Blog Alejandra
         </h1>
 
+
+        {/* SUBTÍTULO */}
         <p className="hero-subtitle">
           Biblioteca UI Profesional — documentación
           y demos de componentes reutilizables.
         </p>
 
+
+        {/* DESCRIPCIÓN */}
         <p className="hero-description">
           Colección de componentes construidos con
           variables CSS, glassmorphism, flexbox,
@@ -26,10 +34,13 @@ export default function HeroSection() {
           accesibles y fáciles de integrar.
         </p>
 
+
+        {/* TECNOLOGÍAS */}
         <div
           className="hero-icons"
           aria-label="Tecnologías utilizadas"
         >
+
           <i
             className="devicon-vitejs-plain colored"
             title="Vite"
@@ -59,9 +70,13 @@ export default function HeroSection() {
             className="devicon-nodejs-plain colored"
             title="Node.js"
           ></i>
+
         </div>
 
+
+        {/* BADGES */}
         <div className="hero-badges">
+
           <span className="neon-badge">
             Biblioteca UI Profesional
           </span>
@@ -69,7 +84,9 @@ export default function HeroSection() {
           <span className="neon-badge">
             Por: Alejandra Velez
           </span>
+
         </div>
+
       </div>
     </header>
   );
