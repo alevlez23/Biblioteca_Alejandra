@@ -28,7 +28,6 @@ export default function TopNav() {
       aria-label="Navegación principal"
     >
       <div className="top-nav__inner">
-        {/* MARCA */}
         <a
           className="top-nav__brand"
           href="#inicio"
@@ -36,7 +35,6 @@ export default function TopNav() {
           Biblioteca UI
         </a>
 
-        {/* ENLACES */}
         <div className="top-nav__links">
           {links.map((link) => (
             <a
