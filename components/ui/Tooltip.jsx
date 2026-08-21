@@ -12,13 +12,13 @@ export default function Tooltip() {
 
       <button
         type="button"
-        className="tooltip"
+        className="ui-tooltip"
         aria-describedby="tooltip-demo"
       >
         Pasa el mouse o usa Tab aquí
 
         <span
-          className="tip"
+          className="ui-tooltip__tip"
           id="tooltip-demo"
           role="tooltip"
         >
