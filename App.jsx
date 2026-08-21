@@ -14,20 +14,12 @@ import Alert from "./components/ui/Alert";
 export default function App() {
   return (
     <div className="page">
-      {/* ==================================================
-          NAVEGACIÓN SUPERIOR
-      ================================================== */}
       <TopNav />
 
-      {/* ==================================================
-          HERO / PRESENTACIÓN
-      ================================================== */}
       <HeroSection />
 
       <main>
-        {/* ==================================================
-            INTRODUCCIÓN
-        ================================================== */}
+        {/* INTRODUCCIÓN */}
         <section
           className="section"
           id="introduccion"
@@ -90,9 +82,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==================================================
-            GUÍA DE ESTILOS
-        ================================================== */}
+        {/* GUÍA DE ESTILOS */}
         <section
           className="section section--alt"
           id="estilos"
@@ -112,7 +102,6 @@ export default function App() {
             </h2>
 
             <div className="showcase-grid">
-              {/* PALETA */}
               <div className="ui-card">
                 <h3 className="component-title">
                   <i
@@ -132,12 +121,11 @@ export default function App() {
 
                 <pre className="code-block">
 {`--primary: #00eaff;
---primary-soft: rgba(0, 234, 255, 0.25);
+--primary-soft: rgba(0, 234, 255, 0.18);
 --radius: 18px;`}
                 </pre>
               </div>
 
-              {/* TIPOGRAFÍA */}
               <div className="ui-card">
                 <h3 className="component-title">
                   <i
@@ -160,9 +148,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==================================================
-            COMPONENTES
-        ================================================== */}
+        {/* COMPONENTES */}
         <section
           className="section"
           id="componentes"
@@ -197,9 +183,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==================================================
-            FORMULARIOS
-        ================================================== */}
+        {/* FORMULARIOS */}
         <section
           className="section section--alt"
           id="formularios"
@@ -224,9 +208,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==================================================
-            NAVEGACIÓN / INTERACCIÓN
-        ================================================== */}
+        {/* NAVEGACIÓN */}
         <section
           className="section"
           id="navegacion"
@@ -253,9 +235,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==================================================
-            EJEMPLOS
-        ================================================== */}
+        {/* EJEMPLOS */}
         <section
           className="section section--alt"
           id="ejemplos"
@@ -304,9 +284,7 @@ export default function App() {
         </section>
       </main>
 
-      {/* ==================================================
-          FOOTER
-      ================================================== */}
+      {/* FOOTER */}
       <footer className="footer">
         <div className="footer-inner">
           <p>
