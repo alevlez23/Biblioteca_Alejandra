@@ -14,10 +14,6 @@ export default function Modal() {
   const descriptionId =
     useId();
 
-  /* ===============================================
-     CERRAR CON ESCAPE
-  =============================================== */
-
   useEffect(() => {
     if (!open) {
       return;
@@ -44,10 +40,6 @@ export default function Modal() {
 
   return (
     <div className="ui-card">
-      {/* =============================================
-          TÍTULO
-      ============================================= */}
-
       <h3 className="component-title">
         <i
           className="bi bi-window-fullscreen"
@@ -56,10 +48,6 @@ export default function Modal() {
 
         Modal
       </h3>
-
-      {/* =============================================
-          BOTÓN ABRIR
-      ============================================= */}
 
       <button
         type="button"
@@ -71,20 +59,16 @@ export default function Modal() {
         Aviso importante
       </button>
 
-      {/* =============================================
-          MODAL
-      ============================================= */}
-
       {open && (
         <div
-          className="modal-overlay"
+          className="ui-modal-overlay"
           role="presentation"
           onMouseDown={() =>
             setOpen(false)
           }
         >
           <div
-            className="modal-content"
+            className="ui-modal-content"
             role="dialog"
             aria-modal="true"
             aria-labelledby={
@@ -99,13 +83,9 @@ export default function Modal() {
               event.stopPropagation()
             }
           >
-            {/* =====================================
-                BOTÓN X
-            ===================================== */}
-
             <button
               type="button"
-              className="modal-close"
+              className="ui-modal-close"
               aria-label="Cerrar ventana"
               onClick={() =>
                 setOpen(false)
@@ -117,28 +97,16 @@ export default function Modal() {
               ></i>
             </button>
 
-            {/* =====================================
-                CONTENIDO
-            ===================================== */}
-
             <h4 id={titleId}>
               Ventana Modal
             </h4>
 
-            <p
-              id={
-                descriptionId
-              }
-            >
+            <p id={descriptionId}>
               Este es un modal con efecto
               glassmorphism, adaptable a
               pantallas pequeñas y compatible
               con la tecla Escape.
             </p>
-
-            {/* =====================================
-                BOTÓN CERRAR
-            ===================================== */}
 
             <button
               type="button"
