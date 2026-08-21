@@ -12,9 +12,6 @@ export default function Accordion() {
 
   return (
     <div className="ui-card">
-      {/* ===============================================
-          TÍTULO
-      =============================================== */}
       <h3 className="component-title">
         <i
           className="bi bi-list-columns-reverse"
@@ -24,9 +21,6 @@ export default function Accordion() {
         Accordion
       </h3>
 
-      {/* ===============================================
-          ACCORDION
-      =============================================== */}
       <div className="accordion">
         <button
           type="button"
@@ -57,9 +51,6 @@ export default function Accordion() {
           ></i>
         </button>
 
-        {/* =============================================
-            CONTENIDO
-        ============================================= */}
         {open && (
           <div
             className="accordion-body"
